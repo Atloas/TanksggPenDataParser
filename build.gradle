@@ -1,0 +1,28 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'application'
+}
+
+group 'com.atloas'
+version '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.atloas.tanksggPenDataParser.MainKt'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    implementation 'org.apache.commons:commons-configuration2:2.7'
+    // https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils
+    implementation 'commons-beanutils:commons-beanutils:1.9.4'
+    testImplementation "io.mockk:mockk:1.12.1"
+}
+
+test {
+    useJUnitPlatform()
+}
