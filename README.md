@@ -13,9 +13,9 @@ Attempts to handle that data manually revealed that it'd be a *massive pain*, he
 
 ## Functionality
 
-As it stands, the program is made to read a csv file in a specific format, transform the contents into an object representation, then filter and sort them to remove guns and tanks that aren't suitable for this analysis (ex. a gun/tank that has both silver and gold AP shells), and write the results to a group of scv files in a format that's ready to be plugged into a Google Sheets similar to the one in the original post (see [Motivation](#motivation)).
+As it stands, the program is made to read a csv file in a specific format, transform the contents into an object representation, then filter and sort them to remove guns and tanks that aren't suitable for this analysis (ex. a gun/tank that has both silver and gold AP shells), and write the results to a group of csv files in a format that's ready to be plugged into a Google Sheets similar to the one in the original post (see [Motivation](#motivation)).
 
-Both data input and output methods were programmed to be modular, though I don't expect to utilize this feature.
+Both data input and output methods were programmed to be modular, though I don't really expect to utilize this feature.
 
 By default, the application expects the input file `1.15.0-shell-pen-dropoff.csv` to be in the `resources` folder, and will place the output files directly in `D:`, but some aspects of this are configurable through the `application.properties` file in the `resources` folder.
 
